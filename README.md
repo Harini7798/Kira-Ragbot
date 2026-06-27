@@ -1,4 +1,4 @@
-# Measurable RAG — a retrieval system that knows what it doesn't know
+# Measurable RAG - a retrieval system that knows what it doesn't know
 
 A retrieval-augmented question-answering system over scientific literature that
 **measures itself**. The point isn't the chatbot — plain RAG (chunk, embed,
