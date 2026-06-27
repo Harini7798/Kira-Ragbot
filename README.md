@@ -1,7 +1,7 @@
 # Measurable RAG - a retrieval system that knows what it doesn't know
 
 A retrieval-augmented question-answering system over scientific literature that
-**measures itself**. The point isn't the chatbot — plain RAG (chunk, embed,
+**measures itself**. The point isn't the chatbot - plain RAG (chunk, embed,
 retrieve, answer) is saturated. The deliverable here is the *measurement*:
 retrieval quality in real numbers, citation precision verified against the
 source, and **correct refusal when the answer isn't in the corpus**.
