@@ -1,0 +1,29 @@
+# Dependency roadmap, grouped by milestone.
+# Only the Milestone 1 deps are active; the heavier ones are commented out and
+# get installed (with your sign-off) when we reach their milestone. This keeps
+# the environment minimal and makes the build-up of the system explicit.
+
+# --- Milestone 1: scaffold, corpus loading, chunking ------------------------
+# Light. Corpus parsing uses only the standard library; certifi just supplies a
+# CA bundle so the dataset download can verify TLS on Windows.
+certifi>=2024.0
+pytest>=7.4
+
+# --- Milestone 2: dense retrieval -------------------------------------------
+# HEAVY: sentence-transformers pulls in torch (hundreds of MB).
+numpy>=1.24
+sentence-transformers>=2.2
+faiss-cpu>=1.7
+
+# --- Milestone 3: hybrid retrieval + cross-encoder reranking ----------------
+rank-bm25>=0.2            # light, pure-Python BM25
+# (the reranker is a sentence-transformers CrossEncoder — already covered above)
+
+# --- Milestone 4+: generation + citation/faithfulness verification ----------
+groq>=0.11               # LLM answer generation via Groq (OpenAI-compatible API)
+# HEAVY: a separate NLI model (e.g. roberta-large-mnli) for grounding checks.
+# transformers>=4.30
+
+# --- Milestone 6 (stretch): local web UI ------------------------------------
+streamlit>=1.30          # `streamlit run app.py`
+matplotlib>=3.7          # abstention trade-off plot (scripts/run_abstention.py)

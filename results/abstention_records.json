@@ -1,0 +1,182 @@
+[
+  {
+    "qid": "scifact-1",
+    "label": "answerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "scifact-3",
+    "label": "answerable",
+    "grounding": 0.3333333333333333,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-5",
+    "label": "answerable",
+    "grounding": 0.3333333333333333,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-13",
+    "label": "answerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "scifact-36",
+    "label": "answerable",
+    "grounding": 0.0,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-42",
+    "label": "answerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "scifact-48",
+    "label": "answerable",
+    "grounding": 0.5,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-49",
+    "label": "answerable",
+    "grounding": 0.5,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-50",
+    "label": "answerable",
+    "grounding": 1.0,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-51",
+    "label": "answerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "scifact-53",
+    "label": "answerable",
+    "grounding": 1.0,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-54",
+    "label": "answerable",
+    "grounding": 0.6666666666666666,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-56",
+    "label": "answerable",
+    "grounding": 1.0,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-57",
+    "label": "answerable",
+    "grounding": 1.0,
+    "insufficient": false
+  },
+  {
+    "qid": "scifact-70",
+    "label": "answerable",
+    "grounding": 1.0,
+    "insufficient": false
+  },
+  {
+    "qid": "unans-0",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-1",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-2",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-3",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-4",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-5",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-6",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-7",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-8",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-9",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-10",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-11",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-12",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-13",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  },
+  {
+    "qid": "unans-14",
+    "label": "unanswerable",
+    "grounding": 0.0,
+    "insufficient": true
+  }
+]

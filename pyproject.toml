@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "measurable-rag"
+version = "0.1.0"
+description = "A retrieval-augmented QA system that measures its own retrieval quality, answer faithfulness, and correct abstention."
+requires-python = ">=3.10"
+dependencies = [
+    "certifi>=2024.0",          # CA bundle so dataset downloads verify TLS on Windows
+    "numpy>=1.24",              # array math for embeddings
+    "sentence-transformers>=2.2",  # embedding model (M2); pulls in PyTorch
+    "faiss-cpu>=1.7",           # vector index / nearest-neighbour search (M2)
+    "rank-bm25>=0.2",           # BM25 sparse keyword retrieval (M3)
+    "groq>=0.11",               # LLM answer generation via Groq API (M4)
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+_docs = [
+    "pypdf>=4.0",        # PDF text
+    "python-docx>=1.1",  # .docx text
+    "openpyxl>=3.1",     # .xlsx text
+    "ddgs>=6.0",         # web search (no API key)
+    "trafilatura>=1.6",  # extract main text from fetched web pages
+]
+ui = [
+    "streamlit>=1.30",   # local web UI (app.py): streamlit run app.py
+    "pypdf>=4.0", "python-docx>=1.1", "openpyxl>=3.1", "ddgs>=6.0", "trafilatura>=1.6",
+]
+api = [
+    "fastapi>=0.110",          # REST backend for the React frontend
+    "uvicorn[standard]>=0.27", # ASGI server
+    "python-multipart>=0.0.9", # file uploads
+    "slowapi>=0.1.9",          # rate limiting / abuse prevention
+    "sqlalchemy>=2.0",         # ORM / SQLite persistence
+    "bcrypt>=4.0",             # password hashing
+    "pyjwt>=2.8",              # auth tokens
+    "pypdf>=4.0", "python-docx>=1.1", "openpyxl>=3.1", "ddgs>=6.0", "trafilatura>=1.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

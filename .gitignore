@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# Secrets (Groq API key etc.)
+.env
+
+# Downloaded datasets and built indexes (re-creatable, can be large)
+data/
+
+# Node / React frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/

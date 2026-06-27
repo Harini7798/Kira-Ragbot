@@ -1,0 +1,25 @@
+# Render Blueprint — single Docker web service.
+# Either commit this and use "New > Blueprint" in Render, OR skip it and create
+# the service manually in the dashboard (Render auto-detects the Dockerfile).
+#
+# plan: the ML stack needs ~1.5-2 GB RAM. "standard" (2 GB) is the smallest that
+# runs document-RAG / web-search without OOM. free/starter (512 MB) will crash.
+services:
+  - type: web
+    name: kira
+    runtime: docker
+    plan: standard
+    healthCheckPath: /api/health
+    envVars:
+      - key: GROQ_API_KEY      # set the value in the Render dashboard
+        sync: false
+      - key: TAVILY_API_KEY    # optional (web search falls back to DuckDuckGo)
+        sync: false
+      - key: KIRA_SECRET       # JWT signing secret — any long random string
+        sync: false
+    # Persistent disk so the SQLite DB + uploaded-doc indexes survive deploys.
+    # (Disks require a paid plan. Remove this block to run without persistence.)
+    disk:
+      name: kira-data
+      mountPath: /app/data
+      sizeGB: 1
