@@ -10,8 +10,10 @@ __pycache__/
 # Secrets (Groq API key etc.)
 .env
 
-# Downloaded datasets and built indexes (re-creatable, can be large)
-data/
+# Downloaded datasets and built indexes (re-creatable, can be large).
+# Leading slash anchors this to the repo-root data/ ONLY — otherwise it also
+# ignores the src/measurable_rag/data/ SOURCE package (which broke the deploy).
+/data/
 
 # Node / React frontend
 frontend/node_modules/
